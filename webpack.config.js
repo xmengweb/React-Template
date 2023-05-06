@@ -83,7 +83,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       // HTML模板文件
-      template: path.resolve(__dirname, "./src/public/index.ejs"),
+      template: path.resolve(__dirname, "./src/assets/index.ejs"),
     }),
   ],
   devServer: {
@@ -98,4 +98,5 @@ module.exports = {
       },
     },
   },
+  stats: 'minimal'
 };
